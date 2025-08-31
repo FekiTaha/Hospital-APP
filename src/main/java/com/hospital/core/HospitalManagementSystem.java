@@ -1,18 +1,17 @@
 package com.hospital.core;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import com.hospital.models.Appointment;
 import com.hospital.models.Device;
 import com.hospital.models.Doctor;
 import com.hospital.models.Patient;
-
-
-public class HospitalManagementSystem{
-    public ArrayList<Patient> patients;
-    public ArrayList<Doctor> doctors;
-    public ArrayList<Device> devices;
-    public ArrayList<Appointment> appointments;
+public class HospitalManagementSystem {
+    public List<Patient> patients;
+    public List<Doctor> doctors;
+    public List<Device> devices;
+    public List<Appointment> appointments;
 
     public HospitalManagementSystem(
         ArrayList<Patient> patients,
@@ -25,29 +24,20 @@ public class HospitalManagementSystem{
         this.devices=new ArrayList<>(devices);
         this.appointments=new ArrayList<>(appointments);
     }
-
-    public void showDevices(){
-        for (Device dev : devices) {
-            dev.displayInfo();
-        }
+    public List<Device> getDevices(){
+        return devices;
     }
 
-    public void showDoctors(){
-        for (Doctor doc : doctors) {
-            doc.afficherInfo();
-        }
+    public List<Doctor> getDoctors(){
+        return doctors;
     }
 
-    public void showPatients(){
-        for (Patient pat : patients) {
-            pat.afficherInfo();
-        }
+    public List<Patient> getPatients(){
+        return patients;
     }
 
-    public void showAppointments(){
-        for (Appointment app : appointments) {
-            app.displayInfo();
-        }
+    public List<Appointment> getAppointments(){
+        return appointments;
     }
 
 

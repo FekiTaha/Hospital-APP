@@ -1,8 +1,11 @@
-com\hospital\core\HospitalManagementSystem.class
 com\hospital\models\Appointment.class
-com\hospital\MainApp.class
 com\hospital\models\Person.class
-com\hospital\utils\InputValidator.class
 com\hospital\models\Device.class
+com\hospital\controllers\HomeController.class
+com\hospital\MainTest.class
+com\hospital\core\HospitalManagementSystem.class
+com\hospital\controllers\PatientFromController.class
+com\hospital\utils\AppNavigator.class
+com\hospital\utils\InputValidator.class
 com\hospital\models\Patient.class
 com\hospital\models\Doctor.class

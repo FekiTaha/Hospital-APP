@@ -18,6 +18,23 @@
   </properties>
 
   <dependencies>
+
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-controls</artifactId>
+        <version>21.0.4</version>
+    </dependency>
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-fxml</artifactId>
+        <version>21.0.4</version>
+    </dependency>
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-graphics</artifactId>
+        <version>21.0.4</version>
+    </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -39,6 +56,15 @@
         </configuration>
       </plugin>
 
+      <plugin>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-maven-plugin</artifactId>
+            <version>0.0.8</version>
+            <configuration>
+                <mainClass>com.hospital.MainTest</mainClass>
+            </configuration>
+        </plugin>
+
       <!-- JAR Plugin with Main Class -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -47,7 +73,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>com.hospital.MainApp</mainClass>
+              <mainClass>com.hospital.MainTest</mainClass>
             </manifest>
           </archive>
         </configuration>
