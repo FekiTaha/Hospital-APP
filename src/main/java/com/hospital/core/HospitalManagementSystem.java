@@ -8,10 +8,10 @@ import com.hospital.models.Device;
 import com.hospital.models.Doctor;
 import com.hospital.models.Patient;
 public class HospitalManagementSystem {
-    public List<Patient> patients;
-    public List<Doctor> doctors;
-    public List<Device> devices;
-    public List<Appointment> appointments;
+    private  List<Patient> patients;
+    private  List<Doctor> doctors;
+    private  List<Device> devices;
+    private  List<Appointment> appointments;
 
     public HospitalManagementSystem(
         ArrayList<Patient> patients,

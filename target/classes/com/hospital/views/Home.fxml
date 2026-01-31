@@ -13,10 +13,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane fx:id="mainRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hospital.controllers.HomeController">
    <top>
-      <VBox prefHeight="161.0" prefWidth="646.0" spacing="8.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="114.0" prefWidth="600.0" spacing="8.0" BorderPane.alignment="CENTER">
          <children>
             <Label text="Hospital Management System" translateX="125.0">
                <font>
@@ -54,7 +53,7 @@
       </VBox>
    </top>
    <center>
-      <GridPane hgap="20.0" translateY="-30.0" vgap="20.0" BorderPane.alignment="CENTER">
+      <GridPane hgap="20.0" prefHeight="221.0" prefWidth="394.0" translateY="-30.0" vgap="20.0" BorderPane.alignment="CENTER">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="232.4000244140625" minWidth="10.0" prefWidth="225.20001220703125" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.79998779296875" minWidth="10.0" prefWidth="234.79998779296875" />
@@ -78,19 +77,36 @@
       </GridPane>
    </center>
    <left>
-      <VBox prefHeight="246.0" prefWidth="100.0" spacing="8.0" BorderPane.alignment="TOP_LEFT">
+      <VBox prefHeight="268.0" prefWidth="226.0" spacing="8.0" BorderPane.alignment="TOP_LEFT">
          <padding>
             <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
          </padding>
          <children>
-            <Label prefHeight="26.0" prefWidth="61.0" text="Quick  Stats" textAlignment="CENTER">
-               <font>
-                  <Font size="10.0" />
-               </font>
-            </Label>
-            <Label text="Total Doctors" />
-            <Label text="Total Patients" />
-            <Label text="Appointments Today" />
+            <GridPane prefHeight="200.0" prefWidth="421.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="97.79998779296875" minWidth="10.0" prefWidth="95.4000244140625" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.20001220703125" minWidth="10.0" prefWidth="98.5999755859375" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="18.0" prefWidth="90.0" text="Quick Stats" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Total Patients" GridPane.rowIndex="1" />
+                  <Label fx:id="totPatLabel" text="Label" translateX="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Total Doctors" GridPane.rowIndex="2" />
+                  <Label fx:id="totDocLabel" text="Label" translateX="10.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="docAvailLabel" text="Doctors available" GridPane.rowIndex="3" />
+                  <Label text="Label" translateX="10.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
          </children>
       </VBox>
    </left>

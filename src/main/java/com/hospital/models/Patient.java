@@ -1,30 +1,33 @@
 package com.hospital.models;
-
 import java.util.ArrayList;
 
-
-
 public class Patient extends Person{
-    ArrayList<Appointment>appointments;
+    private ArrayList<Appointment>appointments;
 
-    public Patient(String name, String email, String id){
-        super(name, email, id);
+    public Patient(String name, String email, String id, String phone){
+        super(name, email, id, phone);
+        this.appointments = new ArrayList<>();
     }
 
-    public Patient(String name, String email, String id, ArrayList appointments){
-        super(name, email, id);
+    public Patient(String name, String email, String id, ArrayList appointments, String phone){
+        super(name, email, id, phone);
         this.appointments=appointments;
     }
 
-    public String getName(){
-        return name;
+    public ArrayList<Appointment> getAppointments(){
+        return appointments;
     }
-
+    public void setAppointments(ArrayList<Appointment> appointments){
+        this.appointments=appointments;
+    }
     @Override
-
-    void specInfo(){
-        for (Appointment app : appointments) {
-            app.displayInfo();
-        }
-    } 
+    public String toString(){
+    return "Patient{" +
+           "name='" + getName() + '\'' +
+           ", id='" + getId() + '\'' +
+           ", email='" + getEmail() + '\'' +
+           ", phone='" + getPhone() + '\'' +
+           ", appointments=" + (appointments != null ? appointments.size() : 0) +
+           '}';
+}
 }

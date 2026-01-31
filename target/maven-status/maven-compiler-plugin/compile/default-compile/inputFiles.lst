@@ -1,11 +1,20 @@
-C:\Users\USER\Desktop\SGRAM_project\hospital-app\src\main\java\com\hospital\models\Device.java
-C:\Users\USER\Desktop\SGRAM_project\hospital-app\src\main\java\com\hospital\controllers\PatientFromController.java
-C:\Users\USER\Desktop\SGRAM_project\hospital-app\src\main\java\com\hospital\models\Patient.java
-C:\Users\USER\Desktop\SGRAM_project\hospital-app\src\main\java\com\hospital\models\Appointment.java
-C:\Users\USER\Desktop\SGRAM_project\hospital-app\src\main\java\com\hospital\utils\AppNavigator.java
-C:\Users\USER\Desktop\SGRAM_project\hospital-app\src\main\java\com\hospital\controllers\HomeController.java
-C:\Users\USER\Desktop\SGRAM_project\hospital-app\src\main\java\com\hospital\models\Doctor.java
-C:\Users\USER\Desktop\SGRAM_project\hospital-app\src\main\java\com\hospital\models\Person.java
-C:\Users\USER\Desktop\SGRAM_project\hospital-app\src\main\java\com\hospital\core\HospitalManagementSystem.java
-C:\Users\USER\Desktop\SGRAM_project\hospital-app\src\main\java\com\hospital\MainTest.java
-C:\Users\USER\Desktop\SGRAM_project\hospital-app\src\main\java\com\hospital\utils\InputValidator.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\MainTest.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\service\PatientService.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\NewTest.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\dao\PatientDAO.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\service\PatientServiceImpl.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\controllers\DoctorFromController.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\controllers\PatientFromController.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\core\HospitalManagementSystem.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\models\Appointment.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\utils\InputValidator.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\utils\DBConnection.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\models\Patient.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\models\Person.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\controllers\HomeController.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\models\Doctor.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\TestDB.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\models\Device.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\service\DoctorService.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\service\DoctorServiceImpl.java
+G:\moved from C\SGRAM_project\hospital-app\src\main\java\com\hospital\utils\AppNavigator.java
